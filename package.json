@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "jshint *.js",
-    "build": "npm run clean; mkdir dist; npm run minjs; npm run mincss",
-    "mincss": "cleancss style.css -o dist/style.min.css",
-    "minjs": "uglify -s app.js -o dist/app.min.js",
+    "build": "npm run clean; mkdir dist; npm run build:js; npm run build:css",
+    "build:css": "cleancss style.css -o dist/style.min.css",
+    "build:js": "uglify -s app.js -o dist/app.min.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist"
   },
