@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "jshint *.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/thedev/npm-build-scripts/issues"
   },
-  "homepage": "https://github.com/thedev/npm-build-scripts"
+  "homepage": "https://github.com/thedev/npm-build-scripts",
+  "devDependencies": {
+    "jshint": "~2.9.1"
+  }
 }
