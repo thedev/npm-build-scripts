@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "jshint *.js",
+    "mincss": "mkdir dist; cleancss style.css -o dist/style.min.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/thedev/npm-build-scripts",
   "devDependencies": {
-    "jshint": "~2.9.1"
+    "jshint": "~2.9.1",
+    "clean-css": "~3.4.9"
   }
 }
