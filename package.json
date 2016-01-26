@@ -6,6 +6,7 @@
   "scripts": {
     "lint": "jshint *.js",
     "mincss": "mkdir dist; cleancss style.css -o dist/style.min.css",
+    "minjs": "mkdir dist; uglify -s app.js -o dist/app.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
